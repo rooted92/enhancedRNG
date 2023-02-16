@@ -93,6 +93,9 @@ addNameBtn.addEventListener('click', function () {
         nameInput.value = '';
         GetNames();
     }
+    else{
+        alert('That name already exists, please enter a different name.');
+    }
 });
 
 randomBtn.addEventListener('click', function () {
