@@ -12,6 +12,7 @@
 
 // Imports
 import { GetNames, SaveToLocalStorage, RemoveFromLocalStorage } from './localStorage.js'
+import { MakeCards } from './functions.js';
 // Global Variables
 // let namesList = GetNames();
 // console.log(namesList);
@@ -138,35 +139,29 @@ const MakeListItemForEntry = (name) => {
 }
 
 const SplitByNumberOfPeople = (numOfPeople, namesArr) => {
-    let numOfPplParsed = parseInt(numOfPeople);
-    let numOfGroups = Math.ceil(namesArr.length / numOfPplParsed);
+    let shuffledArray = shuffleArray(namesArr);
+    const numOfPplParsed = parseInt(numOfPeople);
+    const numOfGroups = Math.ceil(shuffledArray.length / numOfPplParsed);
     let groups = [];
-    // make for loop to iterate from 0 to maxPerGroup value
-    // make secondary loop to add mini group array to groups array
-    // secondary loop will iterate through namesList while it still has length of 0 AND also iterate only while counter is less than number of people then randomly take a name from the list and push it into minigroups array
-    // then outside the second for loop push the mini
-    for(let i = 0; i < numOfGroups; i++){
+    for (let i = 0; i < shuffledArray.length; i += numOfPplParsed) {
         let group = [];
-        console.log('Value of i: ' + i);
-        for(let j = 0; j < numOfPplParsed && namesArr.length > 0; j++){
-            console.log('Value of j: ' + j);
-            let rndIndex = Math.floor(Math.random() * (numOfPplParsed + 1));
-            // see if you can use .some to check if person has already been added
-            console.log('Random name from Split by ppl func: ' + namesArr[rndIndex]);
-            console.log(group.includes(namesArr[rndIndex]));
-            if(!group.includes(namesArr[rndIndex])){
-                group.push(namesArr[rndIndex]);
-            }
-            
-            // if I use the slice method in here then it will remove 5 from list while I am making the first group
-        }
+        group = shuffledArray.slice(i, i + numOfPplParsed);
+        console.log('Check group:');
+        console.log(group);
         groups.push(group);
-        console.log('Length of groups list: ' + groups.length);
-        // use slice method out here
+        console.log('Check group(s):')
+        console.log(groups);
     }
-    console.log(numOfGroups);
-    console.log(namesArr.length);
-    console.log(parseInt(numOfPeople));
+    MakeCards(groups, injectGroups);
+}
+
+// Fisher-Yates Algorithm - attribution: https://www.geeksforgeeks.org/shuffle-a-given-array-using-fisher-yates-shuffle-algorithm/
+const shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
 }
 
 // Event Listeners
@@ -201,9 +196,9 @@ splitByPeople.addEventListener('click', function () {
         alert('Please make an entry');
     }
     else {
-        let namesList = GetNames();
+        // let namesList = 
         console.log('input value for split by people: ', peopleInGroup.value, numberOfGroups.value);
-        SplitByNumberOfPeople(peopleInGroup.value, namesList)
+        SplitByNumberOfPeople(peopleInGroup.value, GetNames());
         peopleInGroup.value = '';
     }
 });
@@ -211,11 +206,3 @@ splitByPeople.addEventListener('click', function () {
 splitByGroup.addEventListener('click', function () {
     numberOfGroups.value = '';
 });
-
-// function getRandomIntInclusive(min, max) {
-//   min = Math.ceil(min);
-//   max = Math.floor(max);
-//   return Math.floor(Math.random() * (max - min + 1) + min); // The maximum is inclusive and the minimum is inclusive
-// }
-
-// array.sort((a, b) => 0.5 - Math.random());
