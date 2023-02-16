@@ -75,6 +75,7 @@ const MakeListItemsForDropdown = (func, inject) => {
 }
 
 // Fisher-Yates Algorithm - attribution: https://www.geeksforgeeks.org/shuffle-a-given-array-using-fisher-yates-shuffle-algorithm/
+// https://bost.ocks.org/mike/shuffle/
 const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
