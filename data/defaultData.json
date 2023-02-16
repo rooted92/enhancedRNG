@@ -1,0 +1,187 @@
+{
+    "defaultNames": [
+        {
+            "firstName": "Goku",
+            "lastName": "Son"
+        },
+        {
+            "firstName": "Vegeta",
+            "lastName": "Vegetable"
+        },
+        {
+            "firstName": "Gohan",
+            "lastName": "Son"
+        },
+        {
+            "firstName": "Trunks",
+            "lastName": "Brief"
+        },
+        {
+            "firstName": "Piccolo",
+            "lastName": "Music"
+        },
+        {
+            "firstName": "Krillin",
+            "lastName": "Whale"
+        },
+        {
+            "firstName": "Bulma",
+            "lastName": "Blue"
+        },
+        {
+            "firstName": "Frieza",
+            "lastName": "Purple"
+        },
+        {
+            "firstName": "Cell",
+            "lastName": "Insect"
+        },
+        {
+            "firstName": "Majin Buu",
+            "lastName": "Pink"
+        },
+        {
+            "firstName": "Broly",
+            "lastName": "Green"
+        },
+        {
+            "firstName": "Mr. Popo",
+            "lastName": "Red"
+        }
+    ],
+
+    "studentNames" : [
+        {
+            "firstName" : "Ken",
+            "lastName" : "Martinez"
+        },
+        {
+            "firstName" : "Scott",
+            "lastName" : "Morenzone"
+        },
+        {
+            "firstName" : "Danny",
+            "lastName" : "Tran"
+        },
+        {
+            "firstName" : "Harrison",
+            "lastName" : "Busby"
+        },
+        {
+            "firstName" : "Brandon",
+            "lastName" : "Le"
+        },
+        {
+            "firstName" : "Jessie",
+            "lastName" : "Lamzon"
+        },
+        {
+            "firstName" : "Andrea",
+            "lastName" : "Burr"
+        },
+        {
+            "firstName" : "Daniel",
+            "lastName" : "Decoito"
+        },
+        {
+            "firstName" : "Pedro",
+            "lastName" : "Castaneda"
+        },
+        {
+            "firstName" : "Jeremy",
+            "lastName" : "Lapham"
+        },
+        {
+            "firstName" : "Jacob",
+            "lastName" : "Dekok"
+        },
+        {
+            "firstName" : "Kenneth",
+            "lastName" : "Fujimura"
+        },
+        {
+            "firstName" : "Fernando",
+            "lastName" : "Aguilar"
+        },
+        {
+            "firstName" : "Jovann",
+            "lastName" : "Contreras"
+        },
+        {
+            "firstName" : "Andrew",
+            "lastName" : "Nilsson"
+        },
+        {
+            "firstName" : "Larissa",
+            "lastName" : "Lazar"
+        },
+        {
+            "firstName" : "N. Harrison",
+            "lastName" : "Wilkins"
+        },
+        {
+            "firstName" : "Madeline",
+            "lastName" : "Gowan"
+        },
+        {
+            "firstName" : "Manuel",
+            "lastName" : "Leyva"
+        },
+        {
+            "firstName" : "Elizar",
+            "lastName" : "Garcia"
+        },
+        {
+            "firstName" : "Mark",
+            "lastName" : "Ramirez"
+        },
+        {
+            "firstName" : "Chirs",
+            "lastName" : "Martinez"
+        },
+        {
+            "firstName" : "Samuel",
+            "lastName" : "Laguna"
+        },
+        {
+            "firstName" : "Isaiah",
+            "lastName" : "Ferguson"
+        },
+        {
+            "firstName" : "Reed",
+            "lastName" : "Goodwin"
+        },
+        {
+            "firstName" : "Amar",
+            "lastName" : "Mann"
+        },
+        {
+            "firstName" : "Marcel",
+            "lastName" : "Rodriguez"
+        },
+        {
+            "firstName" : "Richard",
+            "lastName" : "Johnson"
+        },
+        {
+            "firstName" : "Ulises",
+            "lastName" : "Ortega"
+        },
+        {
+            "firstName" : "Caroline",
+            "lastName" : "Hanna"
+        },
+        {
+            "firstName" : "Aisha",
+            "lastName" : "Mashrah"
+        },
+        {
+            "firstName" : "Shaun",
+            "lastName" : "Aguirre-Reyes"
+        },
+        {
+            "firstName" : "Carlos",
+            "lastName" : "Felipe"
+        }
+    ]
+}
